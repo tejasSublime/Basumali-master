@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1.5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".App_Activity.DrawerMain">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation">
+
+        <ScrollView
+            android:id="@+id/sroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_no_data_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableBottom="@drawable/reload"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/warning"
+                    android:text="You dont have Internet connection!!\n click to refresh"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <!--  <ScrollView
+                      android:id="@+id/scrollView_home"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginBottom="60dp">
+      -->
+
+                <LinearLayout
+                    android:id="@+id/linear_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:id="@+id/home_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        app:spi_dotSelectedColor="@color/black"
+                        app:spi_dotSelectedSize="15dp"
+                        app:spi_dotSize="10dp"
+                        app:spi_looped="true" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sea_green"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="7dp"
+                        android:singleLine="true"
+                        android:text="Offer Zone"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <!--
+                                        <com.rd.PageIndicatorView
+                                            android:id="@+id/pageIndicatorView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="180dp"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:padding="10dip"
+                                            app:piv_animationDuration="400"
+                                            app:piv_animationType="swap"
+                                            app:piv_dynamicCount="true"
+                                            app:piv_radius="4dp"
+                                            app:piv_selectedColor="@color/colorAccent"
+                                            app:piv_strokeWidth="10dp"
+                                            app:piv_unselectedColor="@color/colorPrimaryDark"
+                                            app:piv_viewPager="@id/banner" />
+                    -->
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/SliderDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pager"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/btn_promos_more"
+                            android:background="@color/belize_hol"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="7dp"
+                            android:text="Promos Video"
+                            android:textColor="@android:color/white"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_promos_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="47dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:backgroundTint="@color/belize_hol"
+                            android:text="More"
+                            android:textAllCaps="false"
+
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/promos_horizontal_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/btn_articles_more"
+                            android:background="@color/wisteria"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="7dp"
+                            android:singleLine="true"
+                            android:text="Articles"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_articles_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="47dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:backgroundTint="@color/wisteria"
+                            android:text="More"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_articles"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="#FFFFFF" />
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="@android:color/white"
+                    android:indeterminate="true" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

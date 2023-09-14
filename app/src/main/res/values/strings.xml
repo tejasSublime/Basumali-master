@@ -1,0 +1,146 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Basu Mali</string>/*1976809185680405*/
+    <string name="slide_1_content">Unlock Next Coures Play the Quiz</string>
+    <string name="slide_1_desc">More Courses added monthly Absolutely FREE</string>
+    <string name="slide_2_content">Invite Friends</string>
+    <string name="slide_2_desc">invite your friends and get more points.Redeem Points from Offer section.</string>
+    <string name="slide_3_content">Visit Offer section</string>
+    <string name="slide_3_desc">Keep Visiting Offer section.</string>
+    <string name="mobileNumber">Mobile / Email </string>
+    <string name="mobile">Mobile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="password">Password </string>
+    <string name="refer_code">Refer_code</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="otp">Enter Your OTP</string>
+    <string name="otp_content">You will get otp by sms in 30 second please verify your otp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="quiz_question">Q.1 Who is the most popular musician in india ?</string>
+    <string name="quiz_option_a">sachin tandulkar</string>
+    <string name="quiz_option_b">m s dhoni</string>
+    <string name="quiz_option_c">sonu nigam</string>
+    <string name="quiz_option_d">arjit singh</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cat_id">cat_id</string>
+
+
+    <string name="fb_id">2022272087985822</string>
+
+
+    /*1976809185680405*/
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">VnbGYRqdRaCsFM0AXGswr7CtW</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">
+    IOSOGIl6D7buT24tRkQuUrKEbBgu3jCWbmoy0CA4LFdwjUOKGX</string>
+    /*Social Login Details<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="error_player">error_player</string>* app facebook login details
+    creativewinnersclub@gmail.com or number:9617235205 password:#trustvgrow2018#
+    <string name="brand_name">eWinner Pathsala</string>
+    <string name="brand_description">Madurai - Chennai Travel</string>
+    <string name="customer_review_question"> Are you enjoying this app?</string>
+    <string name="positive_feedback_text">Awesome</string>
+    <string name="negative_feedback_text">Bad</string>* */
+    <string name="ambiguity_feedback_text">Help</string>
+    <string name="new_error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="summary">This is a concise summary of your result and the area you need to perfome
+    well to improve your future quiz results. Check out the results analysis to get more insight.</string>
+
+    <!--Social Login Details
+     * app google login details
+    username:techviawebs@gmail.com password:diy@r@#123techvia
+    app google login details username:techviawebs@gmail.com password:diy@r@#123techvia
+    app twitter login details username:creativewinnersclub@gmail.com password:#trustvgrow2018#
+    app facebook login details creativewinnersclub@gmail.com or number:9617235205
+    password:#trustvgrow2018#
+    * app twitter login details
+    username:creativewinnersclub@gmail.com
+    password:#trustvgrow2018#
+    -->
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="title_activity_login_or_register">Login Or Register</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_my_courses">My Courses</string>
+    <string name="title_activity_articles">Articles</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_brochures">Brochures</string>
+    <string name="title_activity_offers">Offers</string>
+    <string name="my_account">My Account</string>
+    <string name="redeem">Redeem</string>
+    <string name="quiz">Quiz</string>
+    <string name="contact">Contact</string>
+    <string name="title_activity_login_or_reg">LoginOrRegActivity</string>
+    <string name="title_activity_open_image">OpenImageActivity</string>
+    <string name="title_activity_more_program">MoreProgramActivity</string>
+    <string name="title_activity_open_program">OpenProgramActivity</string>
+    <string name="title_activity_article_details">Article Details</string>
+    <string name="title_activity_quiz_home">Quiz</string>
+    <string name="title_activity_pdf_view">Brochure</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="title_activity_terms_of_service">Terms Of Service</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_locate_us">Locate Us</string>
+
+
+    <string name="alert_no_gas">Oh, no! You are out of gas! Try buying some!</string>
+    <string name="alert_drove">Vroooom, you drove a few miles.</string>
+    <string name="alert_fill_gas">You filled &#188; tank. Your tank is now %1$d/4 full!</string>
+    <string name="alert_error_consuming">Error while consuming: %1$s</string>
+    <string name="alert_already_purchased">Item is already purchased</string>
+
+    <string name="error_no_skus">We didn\'t find any SKUs to display&#8230; Check your internet
+        connection and make sure your Google Developer Console was setup correctly.</string>
+    <string name="error_billing_unavailable">Billing unavailable. Make sure your Google Play app
+        is setup correctly</string>
+    <string name="error_billing_default">Billing unavailable. Please check your device.</string>
+
+    <string name="button_drive">Drive</string>
+    <string name="button_purchase">Purchase</string>
+    <string name="button_buy">Buy</string>
+    <string name="button_own">Own</string>
+    <string name="button_update">Update</string>
+    <string name="button_change">Change</string>
+    <string name="button_full_tank">Full tank</string>
+    <string name="toast_full_tank">Your tank is full, please use some gas before buying
+        more.</string>
+
+    <string name="header_inapp">One-time deals</string>
+    <string name="header_subscriptions">Subscriptions</string>
+
+    <string name="content_description_app_loading_image">App loading image</string>
+    <string name="content_description_title_image">80\'s Video Game Style Car Logo</string>
+    <string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_promo_more">Promo More Videos</string>
+    <string name="title_activity_affiliate">Affiliates</string>
+
+    <string name="title_activity_play_audio"></string>
+    <string name="title_activity_purchased_video_view">PurchasedVideoViewActivity</string>
+    <string name="title_activity_video_view_full_screen">VideoViewFullScreenActivity</string>
+    <string name="title_activity_notification">Notifications</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="title_activity_terms_of_services">Terms and Services</string>
+    <string name="title_activity_courses">My Courses</string>
+
+</resources>

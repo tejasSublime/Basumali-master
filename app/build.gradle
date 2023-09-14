@@ -1,0 +1,163 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'basumali'
+            keyPassword 'basumali@123'
+            storeFile file('C:\\Users\\Hp\\Downloads\\Basumali-master_working\\Basumali-master\\promoapp.jks')
+            storePassword 'basumali@123'
+        }
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.tech.Education.Cognitive"
+        minSdkVersion 19
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 30
+        versionCode 42
+        versionName "1.6.6"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    productFlavors {
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.paolorotolo:appintro:4.1.0'
+
+    //cardview
+    implementation 'com.android.support:cardview-v7:26.1.0'
+
+    // volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //Sweetalert
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    //imageslider
+    implementation 'com.ss.bannerslider:bannerslider:1.8.0'
+
+    //Andoid design
+    implementation 'com.android.support:design:28.0.0'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.29.0'
+
+    //picasso for image
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation files('libs/twitter4j-core-4.0.1.jar')
+    implementation files('libs/signpost-commonshttp4-1.2.1.1.jar')
+    implementation files('libs/signpost-core-1.2.1.1.jar')
+    implementation files('libs/signpost-jetty6-1.2.1.1.jar')
+
+    //videoLibrary
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+
+    //material progress bar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    // for dynamic recycle view async library
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+
+    //For circle imageview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+//    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //offer slider
+    implementation 'com.nineoldandroids:library:2.4.0'
+
+    //feedback form
+    implementation 'design.ivisionblog.apps:feedback-dialog:0.0.1-alpha'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    implementation 'com.linkedin.shaky:shaky:1.1.1'
+    implementation 'com.stepstone.apprating:app-rating:2.2.0'
+
+    //banner library
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    //gif view
+    implementation 'com.felipecsl:gifimageview:2.2.0'
+    implementation 'com.github.chrisbanes:PhotoView:1.3.1'
+
+    // for getting country dialog
+    implementation 'com.hbb20:ccp:2.2.7'
+
+    //for country code and number valiadtion
+    implementation 'com.googlecode.libphonenumber:libphonenumber:6.2'
+    implementation 'com.romandanylyk:pageindicatorview:0.2.0'
+
+    //shimmer layout
+    implementation 'io.supercharge:shimmerlayout:1.1.0'
+
+    //For Admob Video App
+    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    implementation 'com.google.android.gms:play-services-base:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+
+    //Google plus
+    implementation 'com.google.android.gms:play-services-plus:11.8.0'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+
+    //Fire crakers animations
+    implementation 'nl.dionsegijn:konfetti:1.1.0'
+
+    //Toasty Library
+    implementation 'com.github.GrenderG:Toasty:1.2.8'
+
+    //github youtube library
+    implementation 'com.github.PierfrancescoSoffritti:AndroidYouTubePlayer:7.0.1'
+
+    //bottom navigation
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //caleder view
+    implementation 'com.github.vatsaldesai92:MyDynamicCalendarLibrary:1.0.1'
+
+    //billing
+    implementation 'com.android.billingclient:billing:1.0'
+    implementation 'com.dailymotion.dailymotion-sdk-android:sdk:0.1.22'
+    implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    implementation 'ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.0.4'
+    implementation 'com.github.jeancsanchez:JcPlayer:2.6.16'
+}
+
+apply plugin: 'com.google.gms.google-services'

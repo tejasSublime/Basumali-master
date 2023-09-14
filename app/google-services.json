@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "279036303754",
+    "firebase_url": "https://promoapp-1536643213428.firebaseio.com",
+    "project_id": "promoapp-1536643213428",
+    "storage_bucket": "promoapp-1536643213428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279036303754:android:185d8f01e24aa5f1",
+        "android_client_info": {
+          "package_name": "com.tech.Education.Cognitive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279036303754-mpdttnuagu0afj0thjn4cddb35v64sej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.Education.Cognitive",
+            "certificate_hash": "f3a8e7ec06119519f151aee021e30a6e8ec9c39b"
+          }
+        },
+        {
+          "client_id": "279036303754-a465sgc8rvb77p0ilftn8p9gvqe905iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1miLyQL_D_FnMS55-fyyj1tLZ1afOLfY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279036303754-a465sgc8rvb77p0ilftn8p9gvqe905iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

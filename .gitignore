@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+hs_err_pid1476.log
+hs_err_pid4480.log
+hs_err_pid6112.log
+hs_err_pid6296.log
+hs_err_pid7344.log
+hs_err_pid7988.log

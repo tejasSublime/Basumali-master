@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/white"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_account"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_my_courses"
+            android:icon="@drawable/ic_reedem"
+            android:title="My Courses" />
+
+        <item
+            android:id="@+id/nav_my_quiz"
+            android:icon="@drawable/ic_quiz"
+            android:title="Quiz" />
+
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_quiz"
+            android:title="Offers" />
+
+        <item
+            android:id="@+id/nav_articles"
+            android:icon="@drawable/ic_quiz"
+            android:title="Articles" />
+
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_quiz"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav_brochures"
+            android:icon="@drawable/ic_quiz"
+            android:title="Brochures" />
+
+        <item
+            android:id="@+id/nav_my_reedem"
+            android:icon="@drawable/ic_reedem"
+            android:title="Redeem"
+            android:visible="false" />
+
+
+    </group>
+
+
+    <item android:title="Social Media">
+
+
+        <menu>
+            <item
+                android:id="@+id/nav_fb"
+                android:icon="@drawable/com_facebook_button_icon"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_you_tube"
+                android:title="YouTube" />
+
+        </menu>
+
+    </item>
+
+    <!-- <item android:title="Setting">
+         <menu>
+             <item
+                 android:id="@+id/nav_app_version"
+                 android:icon="@drawable/ic_video"
+                 android:title="App Version" />
+             <item
+                 android:id="@+id/nav_terms"
+                 android:icon="@drawable/ic_about_us"
+                 android:title="Terms of Service" />
+             <item
+                 android:id="@+id/nav_policy"
+                 android:icon="@drawable/ic_contact_us"
+                 android:title="Privacy Policy" />
+             <item
+                 android:id="@+id/nav_help"
+                 android:icon="@drawable/ic_contact_us"
+                 android:title="Help" />
+         </menu>
+     </item>-->
+
+    <item
+        android:title="Communicate"
+
+        app:itemBackground="@android:color/holo_red_light">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/share"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_contact_us"
+                android:title="Contact Us" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/share"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gredient"
+    android:fitsSystemWindows="true"
+    tools:context="com.tech.Education.Cognitive.App_Activity.Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo_two"
+            android:contentDescription="Profile Logo"
+            tools:ignore="HardcodedText" />
+
+        <!-- Email Label -->
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="8dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/mobileNumber"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            android:autofillHints="emailAddress , phone">
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <!-- Password Label -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:labelFor="@+id/editText"
+                android:maxLength="16"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:autofillHints="Password" />
+
+
+
+
+            <TextView
+                android:id="@+id/prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingStart="8dp"
+                android:paddingTop="20dp"
+                android:text="show"
+                android:textColor="#EEEEEE"
+                android:visibility="gone"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <!--<android.support.v7.widget.AppCompatCheckBox
+                android:id=”@+id/checkbox”
+            android:layout_width=”wrap_content”
+            android:layout_height=”wrap_content”
+            android:text=”Show Password” />-->
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/showPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+
+                android:paddingStart="8dp"
+                tools:ignore="RtlSymmetry" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="start">
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me !"
+                android:textColor="#EEEEEE"
+                android:textSize="12sp"
+                android:typeface="serif"
+                android:layout_marginStart="5dp"
+                tools:ignore="HardcodedText" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:textColor="#EEEEEE"
+                android:textSize="12sp"
+                android:typeface="serif"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+            android:layout_marginTop="24dp"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="No account yet? Create one"
+            android:textColor="#EEEEEE"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+
+    </LinearLayout>
+</ScrollView>
+

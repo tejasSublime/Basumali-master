@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_back"
+    tools:context="com.tech.Education.Cognitive.App_Activity.ReferActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:title="YouTube"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:layout_toRightOf="@id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invite"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--<com.google.android.gms.ads.AdView
+        android:layout_below="@+id/share"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6764981302468940/3995955140">
+    </com.google.android.gms.ads.AdView>-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/reffer_code"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/copy"
+        android:layout_toLeftOf="@id/reffer_code"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_copy"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_toRightOf="@id/reffer_code"
+        android:layout_centerInParent="true"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_share"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2303868441775126/3758885413"></com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+</RelativeLayout>

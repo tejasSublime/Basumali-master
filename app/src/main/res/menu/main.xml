@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tech.Education.Cognitive.App_Activity.MainActivity">
+    <item
+        android:id="@+id/option_about_us"
+        android:title="About Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option_contact_us"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option_locate_us"
+        android:title="Locate Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option_terms_service"
+        android:icon="@drawable/ic_about_us"
+        android:title="Terms of Service" />
+    <item
+        android:id="@+id/option_help"
+        android:icon="@drawable/ic_contact_us"
+        android:title="Help" />
+    <item
+        android:id="@+id/nav_app_version"
+        android:icon="@drawable/ic_video"
+        android:title="App Version: 1.0" />
+
+    <item
+        android:id="@+id/option_reffresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Reffresh"
+        app:showAsAction="always" />
+
+</menu>

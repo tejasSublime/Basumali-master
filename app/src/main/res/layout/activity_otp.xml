@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+               android:background="@drawable/gredient"
+            tools:context="com.tech.Education.Cognitive.App_Activity.OTP">
+
+            <ImageView android:src="@drawable/logo_two"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Sit back and Relax! while we verify your mobile number "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="(Enter the OTP below in case if we fail to detect the SMS automatically )"/>
+
+    <RelativeLayout
+        android:id="@+id/Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageView4"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="65dp"
+            android:layout_toLeftOf="@+id/editText2"
+            android:layout_toStartOf="@+id/editText2"
+            android:backgroundTint="#bab9b9"
+            android:background="@drawable/otp_background"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:maxLength="1" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/editText3"
+            android:layout_toStartOf="@+id/editText3"
+            android:backgroundTint="#bab9b9"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/otp_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/editText4"
+            android:layout_toStartOf="@+id/editText4"
+            android:backgroundTint="#bab9b9"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/otp_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/editText5"
+            android:layout_toStartOf="@+id/editText5"
+            android:backgroundTint="#bab9b9"
+            android:layout_margin="5dp"
+            android:background="@drawable/otp_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/editText6"
+            android:layout_toStartOf="@+id/editText6"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="#bab9b9"
+            android:layout_margin="5dp"
+            android:background="@drawable/otp_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#bab9b9"
+            android:background="@drawable/otp_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </RelativeLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <android.support.v7.widget.AppCompatButton
+                   android:id="@+id/btn_submit"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:layout_marginTop="24dp"
+                   android:layout_marginBottom="24dp"
+                   android:layout_marginLeft="12sp"
+                   android:layout_marginRight="12sp"
+                   android:background="#EEEEEE"
+                   android:textColor="#000000"
+                   android:padding="12dp"
+                   android:textSize="12sp"
+                   android:layout_weight="1"
+                   android:text="Submit"/>
+
+               <android.support.v7.widget.AppCompatButton
+                   android:id="@+id/btn_resend"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:layout_marginTop="24dp"
+                   android:layout_marginBottom="24dp"
+                   android:layout_marginLeft="12sp"
+                   android:layout_marginRight="12sp"
+                   android:background="#EEEEEE"
+                   android:textColor="#000000"
+                   android:padding="12dp"
+                   android:textSize="12sp"
+                   android:layout_weight="1"
+                   android:text="Resend"/>
+           </LinearLayout>
+
+    <TextView
+        android:id="@+id/timmmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="25"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/otp_content"
+        android:layout_below="@id/btn_login"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
